@@ -1,0 +1,233 @@
+@font-face {
+    font-family: lightfont-wi;
+    src: url(/font/BarlowCondensed-Light.ttf);
+}
+@font-face {
+    font-family: thinfont-wi;
+    src: url(/font/BarlowCondensed-Thin.ttf);
+}
+@font-face {
+    font-family: boldfont-wi;
+    src: url(/font/BarlowCondensed-Bold.ttf);
+}
+@font-face {
+    font-family: regfont-wi;
+    src: url(/font/BarlowCondensed-Regular.ttf);
+}
+@font-face {
+    font-family: extralightfont-wi;
+    src: url(/font/BarlowCondensed-ExtraLight.ttf);
+}
+body{
+    background: #EBE0CE;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ul :hover{
+    color: #ED3C20;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding-right: 60px;
+    justify-content: center;
+    font-family: lightfont-wi;
+    font-size: 20px;
+}
+.navbar img{
+    width: 100px;
+    height: 100px;
+}
+.menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+#img-right-side{
+    width: 500px;
+    height: 500px;
+}
+h1{
+    font-size: 100px;
+    color: #ED3C20;
+    font-family: boldfont-wi;
+}
+button{
+    background-color: #ED3C20;
+    color: white;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0;
+    font-family: lightfont-wi;
+    font-size: 40px;
+}
+button :hover{
+    background-color: white;
+    color: #ED3C20;
+}
+.galerie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    margin: 20px;
+}
+.galerie-img{
+    height: 200px;
+    height: 200px;
+    background-color: white;
+}
+.name-product{
+    font-family: regfont-wi;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 30px;
+}
+.price-product{
+    font-family: extralightfont-wi;
+    display: inline;
+    margin-right: 30px;
+    margin-left: 30px;
+    text-align: center;
+    margin-bottom: 8px;
+    margin-top: 8px;
+    font-size: 30px;
+}
+#no-price{
+    color: #ED3C20;
+    text-decoration: line-through;
+}
+footer{
+    text-align: center;
+    font-family: regfont-wi;
+    left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #EBE0CE;
+   margin: 0;
+}
+.carte-countiner{
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+.product-list{
+    background-color: white;
+    margin: 20px;
+    display: flex;
+}
+body > div.carte-countiner > div > div > div:nth-child(1) > img {
+    height: 125px;
+    width: 125px;
+    margin: 20px;
+}
+.discription-sushi{
+    font-family: extralightfont-wi;
+}
+.description{
+    margin-top: 25px;
+}
+svg{
+    width: 30px;
+    height: 30px;
+}
+.svgs{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-left: 20%;
+}
+h2{
+    font-family: regfont-wi;
+    text-align: center;
+}
+.card-details{
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+}
+.fact-price{
+    display: inline;
+}
+#thintext{
+    font-family: extralightfont-wi;
+}
+input{
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    margin-top: 20px;
+    border-width: 0px 0px 1px 0px;
+    
+}
+.inputinline{
+    display: inline-block;
+}
+body > div.carte-countiner > div.card-details > div > button{
+    width: 90%;
+    display: block;
+    margin: auto;
+}
+.countinercontact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.miniblok{
+    margin: 5%;
+    padding: 2%;
+}
+#miniblok{
+    background-color: white;
+    text-align: center;
+    margin: 10%;
+}
+.info-align{
+    text-align: left;
+}
+.contactus-text{
+    color: #223d55;
+}
+.inputborde{
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-color: black;
+    background-color: transparent;
+    resize: none;
+    outline: none;
+} 
+.big-class-aboutus{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+}
+body > div.big-class-aboutus > div:nth-child(1){
+    background-color: white;
+    margin: 5% 20% 5% 20%;
+}
+h2{
+    font-family: boldfont-wi;
+}
+body > div.big-class-aboutus > div:nth-child(1) > p{
+    margin: 10px;
+}
+@media (max-width: 700px){
+    .navbar{
+        flex-direction: column;
+    }
+    .big-class-aboutus{
+        display: flex;
+        flex-direction: column  ;
+        text-align: center;
+    }
+    .countinercontact{
+        flex-direction: column;
+    }
+    .galerie{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
