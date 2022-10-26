@@ -1,23 +1,4 @@
-@font-face {
-    font-family: lightfont-wi;
-    src: url(/font/BarlowCondensed-Light.ttf);
-}
-@font-face {
-    font-family: thinfont-wi;
-    src: url(/font/BarlowCondensed-Thin.ttf);
-}
-@font-face {
-    font-family: boldfont-wi;
-    src: url(/font/BarlowCondensed-Bold.ttf);
-}
-@font-face {
-    font-family: regfont-wi;
-    src: url(/font/BarlowCondensed-Regular.ttf);
-}
-@font-face {
-    font-family: extralightfont-wi;
-    src: url(/font/BarlowCondensed-ExtraLight.ttf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body{
     background: #EBE0CE;
     margin: 0;
@@ -31,13 +12,19 @@ ul :hover{
     color: #ED3C20;
 }
 .navbar{
-    display: flex;
+    display: grid;
+    grid-template-columns: 10% 90%;
     align-items: center;
     text-align: center;
     padding-right: 60px;
     justify-content: center;
-    font-family: lightfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 500;
     font-size: 20px;
+}
+ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
 }
 .navbar img{
     width: 100px;
@@ -47,6 +34,8 @@ ul :hover{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     text-align: center;
+    align-items: center;
+  justify-content: center;
 }
 #img-right-side{
     width: 500px;
@@ -55,7 +44,10 @@ ul :hover{
 h1{
     font-size: 100px;
     color: #ED3C20;
-    font-family: boldfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
 }
 button{
     background-color: #ED3C20;
@@ -63,17 +55,21 @@ button{
     border-radius: 5px;
     margin: 10px;
     border: 0;
-    font-family: lightfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
     font-size: 40px;
 }
-button :hover{
+button:hover{
     background-color: white;
     color: #ED3C20;
+    cursor: pointer;
+    border-color: #ED3C20;
 }
 .galerie{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
+    justify-content: center;
     margin: 20px;
 }
 .galerie-img{
@@ -81,21 +77,28 @@ button :hover{
     height: 200px;
     background-color: white;
 }
+.mini-galerie{
+    background-color: #F1E9DC;
+    margin: 10px;
+    padding: 10px;
+}
 .name-product{
-    font-family: regfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
     margin-bottom: 8px;
     margin-top: 8px;
     font-size: 30px;
 }
 .price-product{
-    font-family: extralightfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
     display: inline;
     margin-right: 30px;
     margin-left: 30px;
     text-align: center;
     margin-bottom: 8px;
     margin-top: 8px;
-    font-size: 30px;
+    font-size: 15px;
 }
 #no-price{
     color: #ED3C20;
@@ -103,7 +106,8 @@ button :hover{
 }
 footer{
     text-align: center;
-    font-family: regfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
     left: 0;
    bottom: 0;
    width: 100%;
@@ -113,11 +117,13 @@ footer{
 .carte-countiner{
     display: grid;
     grid-template-columns: 60% 40%;
+    grid-template-rows: repeat(5, 50%);
 }
 .product-list{
-    background-color: white;
+    background-color: #F1E9DC;
     margin: 20px;
     display: flex;
+    border-radius: 10px;
 }
 body > div.carte-countiner > div > div > div:nth-child(1) > img {
     height: 125px;
@@ -125,35 +131,57 @@ body > div.carte-countiner > div > div > div:nth-child(1) > img {
     margin: 20px;
 }
 .discription-sushi{
-    font-family: extralightfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
 }
 .description{
     margin-top: 25px;
 }
 svg{
-    width: 30px;
-    height: 30px;
+    width: 50px;
+    height: 50px;
+}
+svg:hover{
+    color: #ED3C20;
+    cursor: pointer;
 }
 .svgs{
     display: flex;
     flex-direction: column;
     margin-top: 50px;
-    margin-left: 20%;
+    margin-left: 5%;
 }
 h2{
-    font-family: regfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 400;
     text-align: center;
 }
 .card-details{
     background-color: white;
     border-radius: 5px;
-    position: relative;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    text-align: center;
+    margin: 50px;
+}
+body > div.carte-countiner > div.card-details > div:nth-child(6) > div.inputinline > input[type=number]:nth-child(2){
+    background-color: transparent;
+    width: 10%;
+}
+body > div.carte-countiner > div.card-details > div:nth-child(6) > div.inputinline > input[type=number]:nth-child(1){
+    background-color: transparent;
+    width: 20%;
+}
+body > div.carte-countiner > div.card-details > div:nth-child(5) > input[type=text]{
+    background-color: transparent;
+    width: 30%;
 }
 .fact-price{
     display: inline;
 }
 #thintext{
-    font-family: extralightfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
 }
 input{
     margin-right: 30px;
@@ -210,15 +238,21 @@ body > div.big-class-aboutus > div:nth-child(1){
     margin: 5% 20% 5% 20%;
 }
 h2{
-    font-family: boldfont-wi;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
 }
 body > div.big-class-aboutus > div:nth-child(1) > p{
     margin: 10px;
 }
-@media (max-width: 700px){
-    .navbar{
-        flex-direction: column;
-    }
+body > div.menu > div.left-side > p{
+    text-align: left;
+    margin-left: 70px;
+}
+
+.menu-log{
+    display: none;
+}
+@media (max-width: 750px){
     .big-class-aboutus{
         display: flex;
         flex-direction: column  ;
@@ -230,4 +264,81 @@ body > div.big-class-aboutus > div:nth-child(1) > p{
     .galerie{
         grid-template-columns: repeat(1, 1fr);
     }
+    .div-ul{
+        display: none;
+    }
+    .product-list{
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-right: 80px;
+        margin-left: 80px;
+    }
+    .description{
+        margin: 0;
+    }
+    .svgs{
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+    }
+    .discription-sushi{
+        display: none;
+        
+    }
+    .card-details{
+        display: none;
+    }
+    
+    .carte-countiner{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(5, 50%);
+    }   
+    .menu-log{
+        display: inline;
+        justify-content: center;
+    }
+    body > div.menu > div.left-side > p{
+        display: none;
+    }
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar img{
+        display: none;
+    }
+    .navbar{
+    flex-direction: column;
+    text-align: left;
+    width: 80;
+}
+    .menu-log:hover{
+        color: #ED3C20;
+    }
+    .menu-log:focus + ul {
+        display: block;
+    }
+    
+}
+body > div.carte-countiner > div.card-details > div:nth-child(6) > div.inputinline{
+    display: flex;
+}
+body > div.countinercontact > div:nth-child(1) > input:nth-child(4){
+    margin: 0;
+}
+body > div.countinercontact > div:nth-child(1) > input:nth-child(6){
+    margin: 0;
+}
+body > div.countinercontact > div:nth-child(1) > input:nth-child(8){
+    margin: 0;
+}
+@media (max-width = 900px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+}
+li{
+    list-style: none;
 }
