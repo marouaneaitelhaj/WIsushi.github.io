@@ -76,6 +76,7 @@ button:hover{
     height: 200px;
     height: 200px;
     background-color: white;
+    border-radius: 10px;
 }
 .mini-galerie{
     background-color: #F1E9DC;
@@ -118,12 +119,14 @@ footer{
     display: grid;
     grid-template-columns: 60% 40%;
     grid-template-rows: repeat(5, 50%);
+    margin: 20px;
 }
 .product-list{
     background-color: #F1E9DC;
-    margin: 20px;
     display: flex;
+    align-items: center;
     border-radius: 10px;
+    margin-top: 10px;
 }
 body > div.carte-countiner > div > div > div:nth-child(1) > img {
     height: 125px;
@@ -135,7 +138,7 @@ body > div.carte-countiner > div > div > div:nth-child(1) > img {
     font-weight: 300;
 }
 .description{
-    margin-top: 25px;
+    
 }
 svg{
     width: 50px;
@@ -148,8 +151,6 @@ svg:hover{
 .svgs{
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-left: 5%;
 }
 h2{
     font-family: 'Barlow Condensed', sans-serif;
@@ -160,13 +161,18 @@ h2{
     background-color: white;
     border-radius: 5px;
     display: grid;
+    visibility: hidden;
     grid-template-rows: repeat(6, 1fr);
     text-align: center;
     margin: 50px;
 }
+body > div.carte-countiner > div.card-details.btnshadow > div:nth-child(6) > div.inputinline{
+    display: flex;
+    justify-content: center;
+}
 body > div.carte-countiner > div.card-details > div:nth-child(6) > div.inputinline > input[type=number]:nth-child(2){
     background-color: transparent;
-    width: 10%;
+    width: 15%;
 }
 body > div.carte-countiner > div.card-details > div:nth-child(6) > div.inputinline > input[type=number]:nth-child(1){
     background-color: transparent;
@@ -184,8 +190,8 @@ body > div.carte-countiner > div.card-details > div:nth-child(5) > input[type=te
     font-weight: 300;
 }
 input{
-    margin-right: 30px;
-    margin-left: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 8px;
     margin-top: 20px;
     border-width: 0px 0px 1px 0px;
@@ -252,7 +258,7 @@ body > div.menu > div.left-side > p{
 .menu-log{
     display: none;
 }
-@media (max-width: 750px){
+@media (max-width: 780px){
     .big-class-aboutus{
         display: flex;
         flex-direction: column  ;
@@ -263,9 +269,6 @@ body > div.menu > div.left-side > p{
     }
     .galerie{
         grid-template-columns: repeat(1, 1fr);
-    }
-    .div-ul{
-        display: none;
     }
     .product-list{
         flex-direction: column;
@@ -286,14 +289,20 @@ body > div.menu > div.left-side > p{
         display: none;
         
     }
+    .name-product{
+        margin: 0;
+    }
     .card-details{
         display: none;
     }
-    
+    .svgs{
+        margin-bottom: 10px;
+    }
     .carte-countiner{
         grid-template-columns: 100%;
         grid-template-rows: repeat(5, 50%);
     }   
+
     .menu-log{
         display: inline;
         justify-content: center;
@@ -309,15 +318,29 @@ body > div.menu > div.left-side > p{
         display: none;
     }
     .navbar{
+    display: flex;
     flex-direction: column;
     text-align: left;
     width: 80;
+}   
+ul{
+    display: none;
 }
+.inpt-quantiti{
+    margin: 0;
+}
+
+    ul.active{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        width: 100px;
+        margin-left: 50px;
+        margin-top: 50px;
+    }
     .menu-log:hover{
         color: #ED3C20;
-    }
-    .menu-log:focus + ul {
-        display: block;
     }
     
 }
@@ -342,6 +365,29 @@ body > div.countinercontact > div:nth-child(1) > input:nth-child(8){
 li{
     list-style: none;
 }
-.svgs{
-    display: none;
+.card-details.btnshadow{
+    visibility: visible;
+}
+body > div.carte-countiner > div > div > div.quantity-number > input[type=number]{
+    height: 30;
+    width: 30;
+}
+.inpt-quantiti{
+    height: 40px;
+    width: 40px;
+    border: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: 'Barlow Condensed', sans-serif;
+}
+.btn-buy-buy{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.first-price-display{
+    font-size: 40px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    margin: 10px;
 }

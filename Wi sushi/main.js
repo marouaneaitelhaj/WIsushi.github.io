@@ -1,3 +1,5 @@
-var burgerMenu = document.getElementById('toogle-button');
-
-var overlay = document.getElementsByClassName('div-ul');
+var logo = document.querySelector(".logo");
+var menu = document.querySelector("ul");
+logo.addEventListener("click", function(){
+    menu.classList.toggle("active");
+})

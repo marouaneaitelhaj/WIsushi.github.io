@@ -4,27 +4,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+</style>
     <title>Document</title>
 </head>
 <body>
-    <div class="navbar">
-      <div>
-        <svg class="menu-log" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <div class="navbar">
+    <div class="logo">
+        <svg class="menu-log" id="toogle-button" width="46" height="46" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path d="M20.05 11H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
             <path d="M20.05 16H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
             <path d="M20.05 6H3.95a.95.95 0 0 0-.95.95v.1c0 .525.425.95.95.95h16.1a.95.95 0 0 0 .95-.95v-.1a.95.95 0 0 0-.95-.95Z"></path>
           </svg>
-        <img src="images/sushi on.png" alt="">
+    <img src="images/sushi on.png" alt="">
+</div>
+<ul id="navi-list">
+    <div class="content-nav-bar"><li><a href="index.html">Home</a></li></div>
+    <div class="content-nav-bar"><li><a href="carte.html">Carte</a></li></div>
+    <div class="content-nav-bar"><li><a href="About Us.html">About Us</a></li></div>
+    <div class="content-nav-bar"><li><a href="Contact Us.html">Contact Us</a></li></div>
+</ul>
     </div>
-            <div><ul><a href="index.html">Home</a></ul></div>
-            <div><ul><a href="carte.html">Carte</a></ul></div>
-            <div><ul><a href="About Us.html">About Us</a></ul></div>
-            <div><ul><a href="Contact Us.html">Contact Us</a></ul></div>
-        </div>
         <!--//////////////////////////////////////////////-->
             <div class="carte-countiner">
                 <div>
-                <div class="product-list">
+                  <div class="product-list">
                     <div>
                     <img src="/Wi sushi/Untitled design (2).png" alt="">
                 </div>
@@ -32,104 +47,116 @@
                     <p class="name-product">10 Lorem ipsum dolor</p>
                     <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                 </div>
+                <div>
+                  <p class="first-price-display" >57$</p>
+                </div>
+                <div>
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+                </div>
                 <div class="svgs">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                    <path d="M12 9v6"></path>
-                  </svg>
-                  
-                  <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m5 12 5 5L20 7"></path>
                   </svg>
                 </div>
                 </div>
                 <div class="product-list">
-                    <div>
-                    <img src="/Wi sushi/Untitled design (2).png" alt="">
-                </div>
-                <div class="description">
-                    <p class="name-product">10 Lorem ipsum dolor</p>
-                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div class="svgs">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                    <path d="M12 9v6"></path>
-                  </svg>
-                  
-                  <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                  </svg>
-                </div>
-                </div>
-                <div class="product-list">
-                    <div>
-                    <img src="/Wi sushi/Untitled design (2).png" alt="">
-                </div>
-                <div class="description">
-                    <p class="name-product">10 Lorem ipsum dolor</p>
-                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div class="svgs">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                    <path d="M12 9v6"></path>
-                  </svg>
-                  
-                  <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                  </svg>
-                </div>
-                </div>
-                <div class="product-list">
-                    <div>
-                    <img src="/Wi sushi/Untitled design (2).png" alt="">
-                </div>
-                <div class="description">
-                    <p class="name-product">10 Lorem ipsum dolor</p>
-                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div class="svgs">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                    <path d="M12 9v6"></path>
-                  </svg>
-                  
-                  <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                  </svg>
-                </div>
-                </div>
-                <div class="product-list">
-                    <div>
-                    <img src="/Wi sushi/Untitled design (2).png" alt="">
-                </div>
-                <div class="description">
-                    <p class="name-product">10 Lorem ipsum dolor</p>
-                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-                </div>
-                <div class="svgs">
-                <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                    <path d="M12 9v6"></path>
-                  </svg>
-                  
-                  <svg width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"></path>
-                    <path d="M9 12h6"></path>
-                  </svg>
-                </div>
-                </div>
+                  <div>
+                  <img src="/Wi sushi/Untitled design (2).png" alt="">
+              </div>
+              <div class="description">
+                  <p class="name-product">10 Lorem ipsum dolor</p>
+                  <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+              </div>
+              <div>
+                <p class="first-price-display" >57$</p>
+              </div>
+              <div>
+                <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+              </div>
+              <div class="svgs">
+                <div class="btn-buy-plus">
+                  <i class="fa-solid fa-circle-plus"></i>
             </div>
+              
+              <div class="btn-buy-minus">
+                <i class="fa-sharp fa-solid fa-circle-minus"></i>
+              </div>
+              </div>
+              <div class="done-pricz">
+                <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m5 12 5 5L20 7"></path>
+                </svg>
+              </div>
+              </div>
+              <div class="product-list">
+                <div>
+                <img src="/Wi sushi/Untitled design (2).png" alt="">
+            </div>
+            <div class="description">
+                <p class="name-product">10 Lorem ipsum dolor</p>
+                <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+            </div>
+            <div>
+              <p class="first-price-display" >57$</p>
+            </div>
+            <div>
+              <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+            </div>
+            <div class="svgs">
+              <div class="btn-buy-plus">
+                <i class="fa-solid fa-circle-plus"></i>
+          </div>
+            
+            <div class="btn-buy-minus">
+              <i class="fa-sharp fa-solid fa-circle-minus"></i>
+            </div>
+            </div>
+            <div class="done-pricz">
+              <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
+                <path d="m5 12 5 5L20 7"></path>
+              </svg>
+            </div>
+            </div>
+            <div class="product-list">
+              <div>
+              <img src="/Wi sushi/Untitled design (2).png" alt="">
+          </div>
+          <div class="description">
+              <p class="name-product">10 Lorem ipsum dolor</p>
+              <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+          </div>
+          <div>
+            <p class="first-price-display" >57$</p>
+          </div>
+          <div>
+            <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+          </div>
+          <div class="svgs">
+            <div class="btn-buy-plus">
+              <i class="fa-solid fa-circle-plus"></i>
+        </div>
+          
+          <div class="btn-buy-minus">
+            <i class="fa-sharp fa-solid fa-circle-minus"></i>
+          </div>
+          </div>
+          <div class="done-pricz">
+            <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
+              <path d="m5 12 5 5L20 7"></path>
+            </svg>
+          </div>
+          </div>
+                </div>
+            
             
             <!--//////////////////////////////////////////////-->
             <div class="card-details">
@@ -138,7 +165,7 @@
               </div>
               <div>
                 <p class="price-product">Food &nbsp;&nbsp;</p>
-                <p class="price-product">15$</p>
+                <p class="price-product" id="food-frice">15$</p>
               </div>
               <div>
                 <p class="price-product">Delivery</p>
@@ -167,4 +194,7 @@
             <p>©copyright. designed and developed by marouane</p>
         </footer>
 </body>
+<script src="main.js"></script>
+<script src="carte.js"></script>
+<script src="https://kit.fontawesome.com/abca589cca.js" crossorigin="anonymous"></script>
 </html>
