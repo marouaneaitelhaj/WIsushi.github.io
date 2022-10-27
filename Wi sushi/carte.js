@@ -18,10 +18,16 @@ for (var i = 0; i < btnBuyMinus.length; i++){
         var third = secend.parentElement.parentElement.parentElement.children[3].children;
         var fourth = third[0].value;
         if (parseInt(fourth) > 1){
-        var newvalue = parseInt(fourth) - 1;
+        let newvalue = parseInt(fourth) - 1;
         console.log(newvalue);
-        third[0].value = newvalue
+        third[0].value = newvalue;
     }
         
     })
 }
+
+var doneprice = document.querySelector(".done-pricz");
+var carddetail = document.querySelector(".card-details");
+doneprice.addEventListener("click", function(){
+    carddetail.classList.toggle("btnshadow");
+})
