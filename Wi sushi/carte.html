@@ -17,6 +17,12 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 </style>
+<style>
+  h3{
+    text-align: center;
+    font-size: 30px;
+  }
+</style>
     <title>Document</title>
 </head>
 <body>
@@ -36,22 +42,59 @@ input[type=number] {
     <div class="content-nav-bar"><li><a href="Contact Us.html">Contact Us</a></li></div>
 </ul>
     </div>
+    <div class="card-details">
+      <div class="x-close">
+        <i id="x-close" class="fa-sharp fa-solid fa-xmark fa-2xl"></i>
+      </div>
+      <div>
+        <h2>Card Details</h2>
+      </div>
+      <div>
+        <p class="price-product">Food &nbsp;&nbsp;</p>
+        <p class="price-product" id="food-frice">15$</p>
+      </div>
+      <div>
+        <p class="price-product">Delivery</p>
+        <p class="price-product">3$</p>
+      </div>
+      <div>
+        <p class="price-product">Total&nbsp;&nbsp;&nbsp;</p>
+        <p class="price-product">18$</p>
+      </div>
+      <div>
+        <input placeholder="Card Number" type="text">
+        </div>
+        <div>
+        <div class="inputinline">
+        <input placeholder="Expiry Date" type="number">
+        <input placeholder="CVV" type="number">
+      </div>
+      <div>
+        <button>Buy Now</button>
+        </div>
+    </div>
+    </div>
         <!--//////////////////////////////////////////////-->
-            <div class="carte-countiner">
-                <div>
+        <div class="filterby">
+          <div class="brd-filter">SALADE</div>
+          <div class="brd-filter">OBENTO</div>
+          <div class="brd-filter">PLATS</div>
+        </div>
+        <h3>SALADE</h3>
+            <div class="carte-countiner SALADE">
+                <div class="main-product-list">
                   <div class="product-list">
                     <div>
-                    <img src="/Wi sushi/Untitled design (2).png" alt="">
+                    <img src="https://images.pexels.com/photos/8743914/pexels-photo-8743914.jpeg" alt="">
                 </div>
                 <div class="description">
-                    <p class="name-product">10 Lorem ipsum dolor</p>
+                    <p class="name-product">Mustard seed and fish vindaloo</p>
                     <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
                 </div>
-                <div>
+                <div class="price-qua">
                   <p class="first-price-display" >57$</p>
-                </div>
-                <div>
-                  <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
                 </div>
                 <div class="svgs">
                   <div class="btn-buy-plus">
@@ -63,133 +106,326 @@ input[type=number] {
                 </div>
                 </div>
                 <div class="done-pricz">
-                  <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
-                    <path d="m5 12 5 5L20 7"></path>
-                  </svg>
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
                 </div>
                 </div>
-                <div class="product-list">
-                  <div>
-                  <img src="/Wi sushi/Untitled design (2).png" alt="">
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/7243413/pexels-photo-7243413.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Blackberry and pineapple jam</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
               </div>
-              <div class="description">
-                  <p class="name-product">10 Lorem ipsum dolor</p>
-                  <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/12026725/pexels-photo-12026725.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Clementine and millet salad</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
               </div>
-              <div>
-                <p class="first-price-display" >57$</p>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/10881228/pexels-photo-10881228.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Kaffir lime leaf and oregano salad</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
               </div>
-              <div>
-                <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
               </div>
-              <div class="svgs">
-                <div class="btn-buy-plus">
-                  <i class="fa-solid fa-circle-plus"></i>
-            </div>
+              <h3>OBENTO</h3>
+              <div class="carte-countiner OBENTO">
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/1813504/pexels-photo-1813504.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Millet and apple cookies</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/8697540/pexels-photo-8697540.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Squash and chickpea parcels</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/4929677/pexels-photo-4929677.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Polenta and oatbran cookies</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="https://images.pexels.com/photos/4715682/pexels-photo-4715682.jpeg" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Goat and quorn korma</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+              </div>
+              <h3>PLATS</h3>
+              <div class="carte-countiner PLATS">
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="/Wi sushi/Untitled design (2).png" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Strawberry and garam masala pancake</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="/Wi sushi/Untitled design (2).png" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Chicken and tofu madras</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="/Wi sushi/Untitled design (2).png" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Apple and masa harina salad</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+                <div class="main-product-list">
+                  <div class="product-list">
+                    <div>
+                    <img src="/Wi sushi/Untitled design (2).png" alt="">
+                </div>
+                <div class="description">
+                    <p class="name-product">Monkfish and aubergine madras</p>
+                    <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
+                </div>
+                <div class="price-qua">
+                  <p class="first-price-display" >57$</p>
+                
+                  <input class="inpt-quantiti" id="inpt-quantiti" value="0" type="number">
+                </div>
+                <div class="svgs">
+                  <div class="btn-buy-plus">
+                    <i class="fa-solid fa-circle-plus"></i>
+              </div>
+                
+                <div class="btn-buy-minus">
+                  <i class="fa-sharp fa-solid fa-circle-minus"></i>
+                </div>
+                </div>
+                <div class="done-pricz">
+                  <i class="fa-sharp fa-solid fa-cart-shopping "></i>
+                </div>
+                </div>
+                </div>
+              </div>
               
-              <div class="btn-buy-minus">
-                <i class="fa-sharp fa-solid fa-circle-minus"></i>
-              </div>
-              </div>
-              <div class="done-pricz">
-                <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
-                  <path d="m5 12 5 5L20 7"></path>
-                </svg>
-              </div>
-              </div>
-              <div class="product-list">
-                <div>
-                <img src="/Wi sushi/Untitled design (2).png" alt="">
-            </div>
-            <div class="description">
-                <p class="name-product">10 Lorem ipsum dolor</p>
-                <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-            </div>
-            <div>
-              <p class="first-price-display" >57$</p>
-            </div>
-            <div>
-              <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
-            </div>
-            <div class="svgs">
-              <div class="btn-buy-plus">
-                <i class="fa-solid fa-circle-plus"></i>
-          </div>
-            
-            <div class="btn-buy-minus">
-              <i class="fa-sharp fa-solid fa-circle-minus"></i>
-            </div>
-            </div>
-            <div class="done-pricz">
-              <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
-                <path d="m5 12 5 5L20 7"></path>
-              </svg>
-            </div>
-            </div>
-            <div class="product-list">
-              <div>
-              <img src="/Wi sushi/Untitled design (2).png" alt="">
-          </div>
-          <div class="description">
-              <p class="name-product">10 Lorem ipsum dolor</p>
-              <p class="discription-sushi">Lorem ipsum dolor sit amet consectetur adipisicing elit</p>
-          </div>
-          <div>
-            <p class="first-price-display" >57$</p>
-          </div>
-          <div>
-            <input class="inpt-quantiti" id="inpt-quantiti" value="1" type="number">
-          </div>
-          <div class="svgs">
-            <div class="btn-buy-plus">
-              <i class="fa-solid fa-circle-plus"></i>
-        </div>
-          
-          <div class="btn-buy-minus">
-            <i class="fa-sharp fa-solid fa-circle-minus"></i>
-          </div>
-          </div>
-          <div class="done-pricz">
-            <svg  class="btn-buy-buy" width="46" height="46" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" style="height: 40px;" xmlns="http://www.w3.org/2000/svg">
-              <path d="m5 12 5 5L20 7"></path>
-            </svg>
-          </div>
-          </div>
-                </div>
-            
-            
-            <!--//////////////////////////////////////////////-->
-            <div class="card-details">
-              <div>
-                <h2>Card Details</h2>
-              </div>
-              <div>
-                <p class="price-product">Food &nbsp;&nbsp;</p>
-                <p class="price-product" id="food-frice">15$</p>
-              </div>
-              <div>
-                <p class="price-product">Delivery</p>
-                <p class="price-product">3$</p>
-              </div>
-              <div>
-                <p class="price-product">Total&nbsp;&nbsp;&nbsp;</p>
-                <p class="price-product">18$</p>
-              </div>
-              <div>
-                <input placeholder="Card Number" type="text">
-                </div>
-                <div>
-                <div class="inputinline">
-                <input placeholder="Expiry Date" type="number">
-                <input placeholder="CVV" type="number">
-              </div>
-              <div>
-                <button>Buy Now</button>
-                </div>
-            </div>
-            </div>
-            </div>
-        <!--//////////////////////////////////////////////-->
         <footer>
             <p>©copyright. designed and developed by marouane</p>
         </footer>
