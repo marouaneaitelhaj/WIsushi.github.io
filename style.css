@@ -183,6 +183,25 @@ h2{
             transform: translate(-50%, -50%);
     text-align: center;
 }
+.archive{
+    z-index: 1;
+    background-color: white;
+    border-radius: 5px;
+    display: flex;
+    overflow-y: scroll;
+    max-height: 80%;
+    visibility: hidden;
+    position: fixed;
+    flex-direction: column;
+    top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 25px;
+}
+.big-archive{
+    display: flex;
+}
 body > div.carte-countiner > div.card-details.btnshadow > div:nth-child(6) > div.inputinline{
     display: flex;
     justify-content: center;
@@ -391,6 +410,9 @@ li{
 .card-details.btnshadow{
     visibility: visible;
 }
+.archive.btnshadow{
+    visibility: visible;
+}
 body > div.carte-countiner > div > div > div.quantity-number > input[type=number]{
     height: 30;
     width: 30;
@@ -429,18 +451,20 @@ i{
     justify-content: space-between;
 }
 .filterby{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    justify-content: space-between;
     text-align: center;
-    margin-left: 50px;
-    margin-right: 50px;
-    background-color: #F1E9DC;
+    margin-left: 100px;
+    margin-right: 100px;
     font-weight: bold;
     align-items: center;
 }
+.brd-filter{
+    font-size: 30px;
+}
 .brd-filter:hover{
-    font-size: 25px;
-    transition: font-size 500ms;
+    font-size: 40px;
+    transition: font-size 1000ms;
     cursor: pointer;
     color: #ED3C20;
 }
@@ -459,4 +483,18 @@ i{
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: transform .5s;
     zoom: 125%;
+}
+sup{
+    color: #ED3C20;
+}
+.mini-archive{
+    padding: 10px;
+}
+.flexendlini{
+    display: flex;
+    justify-content: flex-end;
+    color: #ED3C20;
+}
+.widthlini{
+    width: 80%;
 }
