@@ -121,7 +121,7 @@ footer{
 .carte-countiner{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    margin: 20px;
+    margin: 5%;
 }
 .main-product-list{
     margin: 10px;
