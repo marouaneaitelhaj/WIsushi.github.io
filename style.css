@@ -162,6 +162,23 @@ svg:hover{
     margin-left: 10px;
     margin-right: 10px;
 }
+.p-list{
+    text-align: center;
+    margin: 0;
+}
+#list-done-buy{
+    width: 90%;
+    
+                height: 80px;
+                overflow: auto;
+                text-align:justify;
+}
+.p-list-div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
 .svgs{
     display: flex;
 }
@@ -242,22 +259,25 @@ body > div.carte-countiner > div.card-details > div > button{
     margin: auto;
 }
 .countinercontact{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(2, 0.4fr);
     justify-content: center;
-    align-items: center;
 }
 .miniblok{
     margin: 5%;
     padding: 2%;
-    text-align: center;
+    text-align: left;
 }
 #miniblok{
-    background-color: white;
+    background-color: #F1E9DC;
     text-align: center;
+
     margin: 10%;
 }
 .info-align{
     text-align: left;
+    margin-left: 5%;
+    margin-top: 10%;
 }
 .contactus-text{
     color: #223d55;
@@ -270,15 +290,19 @@ body > div.carte-countiner > div.card-details > div > button{
     background-color: transparent;
     resize: none;
     outline: none;
+    margin: 0;
+    margin-bottom: 10px;
+    width: 80%;
 } 
 .big-class-aboutus{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(2, 0.4fr);
     text-align: center;
 }
 body > div.big-class-aboutus > div:nth-child(1){
-    background-color: white;
-    margin: 5% 20% 5% 20%;
+    background-color: #F1E9DC;
+    width: 100%;
 }
 h2{
     
@@ -303,6 +327,7 @@ body > div.menu > div.left-side > p{
         text-align: center;
     }
     .countinercontact{
+        display: flex;
         flex-direction: column;
     }
     .galerie{
@@ -410,6 +435,9 @@ li{
 .card-details.btnshadow{
     visibility: visible;
 }
+.overlay.btnshadow{
+    visibility: visible;
+}
 .archive.btnshadow{
     visibility: visible;
 }
@@ -452,15 +480,15 @@ i{
 }
 .filterby{
     display: flex;
-    justify-content: space-between;
-    text-align: center;
-    margin-left: 100px;
-    margin-right: 100px;
     font-weight: bold;
-    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    width: 100%;
+    background-color: #F1E9DC;
 }
 .brd-filter{
-    font-size: 30px;
+    font-size: 20px;
+    font-weight: lighter;
 }
 .brd-filter:hover{
     font-size: 40px;
@@ -475,14 +503,23 @@ i{
 .main-product-list:hover{
     transition: box-shadow 500ms;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    transition: transform .5s;
-    transform: scale(1.1);
+    
+}
+.done-pricz.active{
+    display: none;
 }
 .card-details:hover{
     transition: box-shadow 500ms;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     transition: transform .5s;
-    zoom: 125%;
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    visibility: hidden;
+    background-color: #EBE0CE;
+    z-index: 100;
 }
 sup{
     color: #ED3C20;
