@@ -41,8 +41,7 @@ ul{
   justify-content: center;
 }
 #img-right-side{
-    width: 500px;
-    height: 500px;
+    width: 100%;
 }
 h1{
     font-size: 100px;
@@ -263,6 +262,7 @@ body > div.carte-countiner > div.card-details > div > button{
     grid-template-columns: repeat(2, 0.4fr);
     justify-content: center;
 }
+
 .miniblok{
     margin: 5%;
     padding: 2%;
@@ -292,17 +292,21 @@ body > div.carte-countiner > div.card-details > div > button{
     outline: none;
     margin: 0;
     margin-bottom: 10px;
-    width: 80%;
+    width: 100%;
 } 
 .big-class-aboutus{
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(2, 0.4fr);
     text-align: center;
+    align-items: center;
+    align-content: center;
 }
 body > div.big-class-aboutus > div:nth-child(1){
     background-color: #F1E9DC;
-    width: 100%;
+    width: 80%;
+    padding: 2%;
+    margin: 2%;
 }
 h2{
     
@@ -326,6 +330,7 @@ body > div.menu > div.left-side > p{
         flex-direction: column  ;
         text-align: center;
     }
+    
     .countinercontact{
         display: flex;
         flex-direction: column;
@@ -397,6 +402,7 @@ ul{
     .carte-countiner{
         grid-template-columns: repeat(1, 1fr);
     } 
+    
 }
 @media (max-width: 353px){
     .price-product{
@@ -406,6 +412,7 @@ ul{
     .card-details{
         margin: 10px;
     }
+    
 }
 .x-close{
     display: flex;

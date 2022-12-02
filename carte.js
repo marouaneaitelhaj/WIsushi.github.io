@@ -29,9 +29,12 @@ for (var i = 0; i < btnBuyMinus.length; i++){
 var btnbuybuy = document.querySelector(".x-close");
 var carddetail = document.querySelector(".card-details");
 btnbuybuy.addEventListener("click", function(){
+    for (var  i = 0; i < document.querySelectorAll(".inpt-quantiti").length; i++){
+        document.querySelectorAll(".inpt-quantiti")[i].value = 0;
+    }
     document.querySelector(".done-pricz").classList.toggle('active');
     carddetail.classList.toggle("btnshadow");
-    zlayga.innerHTML = "";
+    listarchive.innerHTML = "";
 })
 document.querySelector("body > div.filterby > div:nth-child(1)").addEventListener("click", function(){
     document.querySelector("body > div.carte-countiner.SALADE").style.display = "grid";
@@ -57,6 +60,7 @@ document.querySelector("body > div.filterby > div:nth-child(4)").addEventListene
 
 
 document.querySelector("#buynow").addEventListener("click", function(e){
+    alert("DONE !!");
     for (var  i = 0; i < document.querySelectorAll(".inpt-quantiti").length; i++){
         document.querySelectorAll(".inpt-quantiti")[i].value = 0;
     };
