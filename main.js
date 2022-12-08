@@ -31,9 +31,15 @@ document.querySelector(".done-pricz").addEventListener("click", function(){
         var first = dltbtn[i];
         first.addEventListener("click", function(event) {
              var minusvalue = parseInt(event.target.parentElement.children[1].textContent);
-             
+            // console.log(event.target.parentElement.children[0].textContent);
+            // console.log(document.querySelectorAll(".name-product")[2].textContent)
+             var deletedpro =  event.target.parentElement.children[0].textContent.slice(0, -1);
+             for (var  j = 0; j < document.querySelectorAll(".name-product").length; j++){
+                if(document.querySelectorAll(".name-product")[j].textContent == deletedpro){
+                    document.querySelectorAll(".name-product")[j].parentElement.parentElement.children[2].children[1].value = 0;
+                }
+            }
             event.target.parentElement.remove();
-            
             document.querySelector("body > div.card-details.btnshadow > div:nth-child(5) > p:nth-child(2)").textContent = parseInt(document.querySelector("body > div.card-details.btnshadow > div:nth-child(5) > p:nth-child(2)").textContent) + minusvalue + "$";
             document.querySelector(".card-details").children[2].children[2].textContent = parseInt(document.querySelector("body > div.card-details.btnshadow > div:nth-child(5) > p:nth-child(2)").textContent) - 3 + "$";
             
@@ -45,7 +51,6 @@ document.querySelector(".done-pricz").addEventListener("click", function(){
     document.querySelector("body > div.card-details.btnshadow > div:nth-child(5) > p:nth-child(2)").textContent = 3 + total + "$";
     
     
-    total = 0;
     
 }
 )

@@ -29,9 +29,6 @@ for (var i = 0; i < btnBuyMinus.length; i++){
 var btnbuybuy = document.querySelector(".x-close");
 var carddetail = document.querySelector(".card-details");
 btnbuybuy.addEventListener("click", function(){
-    for (var  i = 0; i < document.querySelectorAll(".inpt-quantiti").length; i++){
-        document.querySelectorAll(".inpt-quantiti")[i].value = 0;
-    }
     document.querySelector(".done-pricz").classList.toggle('active');
     carddetail.classList.toggle("btnshadow");
     listarchive.innerHTML = "";
